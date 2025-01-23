@@ -1,4 +1,5 @@
 # EC530_Assignment1
+# Author: Miray Ayerdem
 This function takes two arrays of geolocations and matches each point in the first array to the closest point in the second array using the Haversine formula to calculate distances.
 
 # **Requirements**
