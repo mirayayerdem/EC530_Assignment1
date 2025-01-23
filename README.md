@@ -9,7 +9,7 @@ Python 3.6 or higher
 
 1. Clone the repository => git clone https://github.com/mirayayerdem/EC530_Assignment1.git  
 2. Go to this folder => cd EC530_Assignment1  
-3. Use any Python-compatible IDE (e.g., PyCharm, VS Code) to open the find_distance.py file.  
+3. Use any Python-compatible IDE (e.g., PyCharm, VS Code) to open the find_distance.py file.
 4.The script will prompt you to enter geolocation coordinates in the following format:  
 	•	Each location is given as <latitude,longitude>.  
 	•	Separate multiple locations with spaces.  
