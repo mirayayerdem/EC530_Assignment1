@@ -9,10 +9,9 @@ Python 3.6 or higher
 
 1. Clone the repository => git clone https://github.com/mirayayerdem/EC530_Assignment1.git  
 2. Go to this folder => cd EC530_Assignment1  
-3. Run your script in this format:  
-4. Enter <latitude,longitude> for each location and add a space for additional locations:  
-python find_distance.py --locations1 "lat1,lon1 lat2,lon2 ..." --locations2 "lat3,lon3 lat4,lon4 ..."  
-Example Script: python find_distance.py --locations1 "20.4176,-14.0074 17.0525,-8.7434" --locations2 "17.7729,-122.4118 65.1681,-80.2988"  
-
-
-
+3. Use any Python-compatible IDE (e.g., PyCharm, VS Code) to open the find_distance.py file.
+4.The script will prompt you to enter geolocation coordinates in the following format:
+	•	Each location is given as <latitude,longitude>.
+	•	Separate multiple locations with spaces.
+	•	Example input: 34.45,25.35 -12.26,34.99
+5. The script will display the closest points and their distances in kilometers.
