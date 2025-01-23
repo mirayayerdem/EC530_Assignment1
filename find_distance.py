@@ -43,30 +43,14 @@ def find_shortest_distances(locs1, locs2):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Find shortest distances between two arrays of locations.")
-    parser.add_argument(
-        "--locations1",
-        required=True,
-        help="First set of locations in the format 'lat1,lon1 lat2,lon2 ...' For example '30.712,-13.007 30.023,-108.483' ",
-    )
-    parser.add_argument(
-        "--locations2",
-        required=True,
-        help="Second set of locations in the format 'lat1,lon1 lat2,lon2 ...' For example '20.317,-23.003 34.020,-110.183' ",
-    )
+    print("Enter the first array of geolocations:")
+    locations1 = input("Format should be like 'lat1,lon1 lat2,lon2 ...' (e.g., '10.72,-15.07 20.23,-28.43'): ")
+    locs1 = [(float(latitude), float(longitude)) for latitude, longitude in (loc.split(",") for loc in locations1.split())]
 
-    args = parser.parse_args()
+    print("\nEnter the second array of geolocations:")
+    locations2 = input("Format should be like 'lat1,lon1 lat2,lon2 ...' (e.g., '10.17,-43.03 35.20,-10.13'): ")
+    locs2 = [(float(latitude), float(longitude)) for latitude, longitude in (loc.split(",") for loc in locations2.split())]
 
-    # Parse input locations
-    locs1 = []
-    for loc in args.locations1.split():
-        lat, lon = map(float, loc.split(","))
-        locs1.append((lat, lon))
-
-    locs2 = []
-    for loc in args.locations2.split():
-        lat, lon = map(float, loc.split(","))
-        locs2.append((lat, lon))   
     # Find shortest distances
     distances = find_shortest_distances(locs1, locs2)
 
